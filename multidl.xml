@@ -1,0 +1,52 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <Container version="2">
+   <Name Default="multidl">multidl</Name>
+   <Registry>https://registry.hub.docker.com/u/maciver45/multidl/</Registry>
+   <Repository>maciver45/multidl</Repository>
+   <Privileged>false</Privileged>
+   <Network Default="bridge">bridge</Network>
+   <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
+   <Icon>https://bitbucket.org/maciver45/images/raw/80045b9a70f7d41d1f3094442e2d799d9e70e614/multidl.png</Icon>,
+    <Config 
+        Type="Path" 
+        Name="config directory" 
+        Target="/config" 
+        Default="/mnt/user/appdata/multidl" 
+        Mode="rw" 
+        Description="config directory"
+        Required="true">/mnt/user/appdata/multidl</Config>
+	<Config 
+        Type="Path" 
+        Name="podcast directory" 
+        Target="/podcast" 
+        Default="/mnt/user/audio/Podcasts" 
+        Mode="rw" 
+        Description="podcast directory"
+        Required="true">/mnt/user/audio/Podcasts</Config>
+	<Config 
+        Type="Path" 
+        Name="sabnzbd directory" 
+        Target="/sabnzbd" 
+        Default="/mnt/user/download" 
+        Mode="rw" 
+        Description="sabnzbd directory"
+        Required="true">/mnt/user/adownload</Config>
+	<Config 
+        Type="Path" 
+        Name="youtube directory" 
+        Target="/youtube" 
+        Default="/mnt/user/video/youtube" 
+        Mode="rw" 
+        Description="youtube directory"
+        Required="true">/mnt/user/video/youtube</Config>
+	<Config 
+        Type="Port" 
+        Name="sabnzbd port" 
+        Target="8080" 
+        Default="8080" 
+        Mode="tcp" 
+        Description="sabnzbd port" 
+        Display="always" 
+        Required="true">8240</Config>
+ </Container>
+ 
