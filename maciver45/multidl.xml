@@ -30,7 +30,7 @@
         Default="/mnt/user/download" 
         Mode="rw" 
         Description="sabnzbd directory"
-        Required="true">/mnt/user/adownload</Config>
+        Required="true">/mnt/user/download</Config>
 	<Config 
         Type="Path" 
         Name="youtube directory" 
