@@ -18,7 +18,7 @@
 	<Config 
         Type="Path" 
         Name="podcast directory" 
-        Target="/podcast" 
+        Target="/podcasts" 
         Default="/mnt/user/audio/Podcasts" 
         Mode="rw" 
         Description="podcast directory"
