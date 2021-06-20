@@ -6,7 +6,7 @@
    <Privileged>false</Privileged>
    <Network Default="bridge">bridge</Network>
    <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
-   <Icon>https://bitbucket.org/maciver45/images/raw/80045b9a70f7d41d1f3094442e2d799d9e70e614/multidl.png</Icon>,
+   <Icon>https://raw.githubusercontent.com/maciver45/docker-templates/master/icons/multidl.png</Icon>
     <Config 
         Type="Path" 
         Name="config directory" 
