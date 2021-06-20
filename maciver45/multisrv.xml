@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
  <Container version="2">
-   <Name Default="multidl">multidl</Name>
+   <Name Default="multisrv">multisrv</Name>
    <Registry>https://registry.hub.docker.com/u/maciver45/multisrv/</Registry>
    <Repository>maciver45/multisrv</Repository>
    <Privileged>false</Privileged>
