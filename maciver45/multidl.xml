@@ -19,10 +19,10 @@
         Type="Path" 
         Name="podcast directory" 
         Target="/podcasts" 
-        Default="/mnt/user/audio/Podcasts" 
+        Default="/mnt/user/audio/podcasts" 
         Mode="rw" 
         Description="podcast directory"
-        Required="true">/mnt/user/audio/Podcasts</Config>
+        Required="true">/mnt/user/audio/podcasts</Config>
 	<Config 
         Type="Path" 
         Name="sabnzbd directory" 
