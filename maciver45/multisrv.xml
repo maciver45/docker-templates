@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Container version="2">
+   <Name Default="multidl">multidl</Name>
+   <Registry>https://registry.hub.docker.com/u/maciver45/multisrv/</Registry>
+   <Repository>maciver45/multisrv</Repository>
+   <Privileged>false</Privileged>
+   <Network Default="bridge">bridge</Network>
+   <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
+   <Icon>https://raw.githubusercontent.com/maciver45/docker-templates/master/icons/multisrv.png</Icon>
+    <Config 
+        Type="Path" 
+        Name="config directory" 
+        Target="/config" 
+        Default="/mnt/user/appdata/multisrv" 
+        Mode="rw" 
+        Description="config directory"
+        Required="true">/mnt/user/appdata/multisrv</Config>
+	<Config 
+        Type="Path" 
+        Name="transfer directory" 
+        Target="/transfer" 
+        Default="/mnt/user/transfer" 
+        Mode="rw" 
+        Description="transfer directory"
+        Required="true">/mnt/user/transfer</Config>
+	<Config 
+        Type="Port" 
+        Name="dns port" 
+        Target="53" 
+        Default="53" 
+        Mode="udp" 
+        Description="dns port" 
+        Display="always" 
+        Required="true">53</Config>
+	<Config 
+        Type="Port" 
+        Name="pixelsrv https" 
+        Target="443" 
+        Default="443" 
+        Mode="tcp" 
+        Description="pixelsrv https" 
+        Display="always" 
+        Required="true">443</Config>
+    <Config 
+        Type="Port" 
+        Name="vlmcsd port" 
+        Target="1688" 
+        Default="8230" 
+        Mode="tcp" 
+        Description="vlmcsd port" 
+        Display="always" 
+        Required="true">8230</Config>
+    <Config 
+        Type="Port" 
+        Name="floccus" 
+        Target="8231" 
+        Default="8231" 
+        Mode="tcp" 
+        Description="floccus port" 
+        Display="always" 
+        Required="true">8231</Config>
+ </Container>
+ 
