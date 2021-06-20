@@ -65,7 +65,7 @@
         Target="8232" 
         Default="8232" 
         Mode="tcp" 
-        Description=na port" 
+        Description="na port" 
         Display="always" 
         Required="true">8232</Config>
  </Container>
