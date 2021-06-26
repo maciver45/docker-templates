@@ -14,7 +14,7 @@
         Mode="rw" 
         Description="config directory"
         Required="true">/mnt/user/appdata/multibackup</Config>
-	<Config 
+    <Config 
         Type="Path" 
         Name="backup dir" 
         Target="/backup" 
