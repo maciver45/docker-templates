@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Container version="2">
+   <Name Default="multibackup">multidl</Name>
+   <Registry>https://registry.hub.docker.com/u/maciver45/multibackup/</Registry>
+   <Repository>maciver45/multibackup</Repository>
+   <Privileged>false</Privileged>
+   <Network Default="bridge">bridge</Network>
+   <Icon>https://raw.githubusercontent.com/maciver45/docker-templates/master/icons/multibackup.png</Icon>
+    <Config 
+        Type="Path" 
+        Name="config directory" 
+        Target="/config" 
+        Default="/mnt/user/appdata/multibackup" 
+        Mode="rw" 
+        Description="config directory"
+        Required="true">/mnt/user/appdata/multibackup</Config>
+	<Config 
+        Type="Path" 
+        Name="backup dir" 
+        Target="/backup" 
+        Default="/mnt/disks/usb-backup" 
+        Mode="rw" 
+        Description="backup dir"
+        Required="true">/mnt/disks/usb-backup</Config>
+ </Container>
+ 
