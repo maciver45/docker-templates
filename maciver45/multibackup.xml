@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
  <Container version="2">
-   <Name Default="multibackup">multidl</Name>
+   <Name Default="multibackup">multibackup</Name>
    <Registry>https://registry.hub.docker.com/u/maciver45/multibackup/</Registry>
    <Repository>maciver45/multibackup</Repository>
    <Privileged>false</Privileged>
